@@ -499,7 +499,7 @@ img {
     margin-bottom: 15px;
 }
 
-.product-text h3 {
+.tech-section .product-text h3 {
     color: white;
 }
 
@@ -760,11 +760,27 @@ img {
 }
 
 @media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
     .nav-links {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
+        width: 80%;
         height: 100vh;
         background: white;
         flex-direction: column;
@@ -798,5 +814,39 @@ img {
 
     .grid-2-col {
         grid-template-columns: 1fr;
+    }
+
+    .cert-grid {
+        gap: 20px;
+    }
+
+    .cert-item {
+        padding: 15px 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .btn-outline {
+        margin-left: 0;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
