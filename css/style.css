@@ -190,6 +190,8 @@ img {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
+    padding: 10px;
+    margin-right: 5px;
 }
 
 .navbar.scrolled .menu-toggle {
@@ -573,6 +575,10 @@ img {
     border-radius: 10px;
     text-align: center;
     transition: var(--transition);
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cert-item:hover {
@@ -818,11 +824,13 @@ img {
 
     .cert-grid {
         gap: 20px;
+        flex-direction: column;
     }
 
     .cert-item {
-        padding: 15px 20px;
+        padding: 25px 20px;
         width: 100%;
+        min-height: 100px;
     }
 }
 
@@ -837,7 +845,7 @@ img {
         display: block;
         width: 100%;
         text-align: center;
-        margin-bottom: 10px;
+        margin: 0 0 15px 0;
     }
 
     .btn-outline {
